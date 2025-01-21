@@ -68,9 +68,7 @@ The interpretation is also similar to a conventional ordination scatter plot -- 
 
 Here we can see that CTF can effectively show a difference between sites subjects across time.
 
-images/sample-plots/NE-state-subject-ordination-ctf-sample.png
-
-![unifrac](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/unifrac_salinity_all-sites.png?raw=true)
+![ctf-volitility](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/NE-state-subject-ordination-ctf-sample.png?raw=true)
 
 #### subject_biplot.qzv
 

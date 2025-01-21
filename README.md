@@ -9,6 +9,30 @@ Metadata for all sites [here](metadata.tsv)
 
 
 ## Core diversity metrics 
+More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-beta-diversity
+* Alpha diversity
+    * Shannon’s diversity index (a quantitative measure of community richness)
+    * Observed OTUs (a qualitative measure of community richness)
+    * Faith’s Phylogenetic Diversity (a qualitiative measure of community richness that incorporates phylogenetic relationships between the features)
+    * Evenness (or Pielou’s Evenness; a measure of community evenness)
+* Beta diversity
+    * Jaccard distance (a qualitative measure of community dissimilarity. Qualitative - presence / absence - percentage of taxa not found in both samples)
+    * Bray-Curtis distance (a quantitative measure of community dissimilarity. Takes into consideration abundance and presence absence)
+    * Unweighted UniFrac distance (a qualitative measure of community dissimilarity that incorporates phylogenetic relationships between the features. Percentage of phylogenetic branch length not found in both samples)
+    * Weighted UniFrac distance (a quantitative measure of community dissimilarity that incorporates phylogenetic relationships between the features. Similar to Bray-Curtis but takes into consideration phylogenetic relationships)
+Ordination
+- PCA is performed on the underlying data matrix
+- PCoA is performed on distance matrices above (seems to better handle missing data than PCA does)
+- PERMANOVA to test for differences between groups
+
+
+
+* DEICODE is a tool box for running Robust Aitchison PCA on sparse compositional omics datasets, linking specific features to beta-diversity ordination.
+
+
+![unifrac](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/unifrac_salinity_all-sites.png?raw=true)
+Unifrac of all samples colored by salinity designation from SWMP collected data
+
 
 The folders containing:  
 

@@ -1,7 +1,7 @@
 # NERRs-18s-metabarcoding
 Metabarcoding analysis for NERRs sites sampled quarterly 
 
-
+Metadata for all sites [here](metadata.tsv)
 ## Core diversity metrics 
 
 The folders containing:

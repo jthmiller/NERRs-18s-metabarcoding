@@ -3,6 +3,11 @@ Metabarcoding analysis for NERRs sites sampled quarterly
 
 Metadata for all sites [here](metadata.tsv)
 
+## OTU Abundance 
+
+![gulf](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/gulf-barplots-sample.png?raw=true)
+
+
 ## Core diversity metrics 
 
 The folders containing:  

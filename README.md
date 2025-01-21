@@ -74,7 +74,10 @@ Here we can see that CTF can effectively show a difference between sites subject
 
 We can also see that the IBD grouping is separated entirely along the first PC (axis 1). We can now use Qurro to explore the feature loading partitions (arrows) in this biplot as a log-ratio of the original table counts. This allows us to relate these low-dimensional representations back to our original data. Additionally, log-ratios provide a nice set of data points for additional analysis such as LME models.
 
-#### L
+#### Feature volatility  
+
+
+![fv](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/volatility-control-chart.png?raw=true)
 
 
 

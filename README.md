@@ -36,15 +36,11 @@ Bar-plot images of sites broken up by regions [here](images/barplots)
 Network plots of sites broken up by regions [here](images/network-plots/)  
 
 
-### Longitudinal Analysis
-From the tutorial: Repeat measure experimental designs (e.g. time series) are a valid and powerful method to control for inter-individual variation. However, conventional dimensionality reduction methods can not account for the high-correlation of each subject to itself at a later time point. 
+## Longitudinal Analysis
+From the tutorial: Repeat measure experimental designs (e.g. time series) are a valid and powerful method to control for inter-individual variation. However, conventional dimensionality reduction methods can not account for the high-correlation of each subject to itself at a later time point. Longitudinal analysis can occur on features (ASVs), taxonomic assignment, or on phylogenetic clusters. More info and tutorials for longitudinal stats, including LME models can be found [here](https://docs.qiime2.org/2020.2/tutorials/longitudinal/)
 
-Longitudinal analysis can occur on features (ASVs), taxonomic assignment, or on phylogenetic clusters. 
-
-Longitudinal stats, including LME models can be found [here](https://docs.qiime2.org/2020.2/tutorials/longitudinal/)
-
-### Compositional tensor factorization (CTF)  doi: 10.1038/s41587-020-0660-7
-The package 'gemelli' for qiime2 is used to perform CTF.  The gemelli tutorial can be found [here](https://github.com/biocore/gemelli/blob/master/ipynb/tutorials/IBD-Tutorial-QIIME2-CLI.md)
+#### Compositional tensor factorization (CTF) 
+The package 'gemelli' for qiime2 is used to perform CTF.  The gemelli tutorial can be found [here](https://github.com/biocore/gemelli/blob/master/ipynb/tutorials/IBD-Tutorial-QIIME2-CLI.md) and at doi: 10.1038/s41587-020-0660-7
 
 - Treat each NERR_SITE as a subject
 - Treat each NERR_SITE_QTR as a time

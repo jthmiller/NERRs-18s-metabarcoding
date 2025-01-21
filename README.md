@@ -1,8 +1,5 @@
 # NERRs-18s-metabarcoding
-Metabarcoding analysis for NERRs sites sampled quarterly 
-
-Metadata for all sites [here](metadata.tsv)
-
+Metabarcoding analysis for NERRs sites sampled quarterly. Metadata for all sites [here](metadata.tsv), including SWMP data when available. Downloaded from https://cdmo.baruch.sc.edu
 ## OTU Abundance 
 
 ![gulf](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/gulf-barplots-sample.png?raw=true)
@@ -20,21 +17,19 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
     * Bray-Curtis distance (a quantitative measure of community dissimilarity. Takes into consideration abundance and presence absence)
     * Unweighted UniFrac distance (a qualitative measure of community dissimilarity that incorporates phylogenetic relationships between the features. Percentage of phylogenetic branch length not found in both samples)
     * Weighted UniFrac distance (a quantitative measure of community dissimilarity that incorporates phylogenetic relationships between the features. Similar to Bray-Curtis but takes into consideration phylogenetic relationships)
+
 Ordination
 - PCA is performed on the underlying data matrix
 - PCoA is performed on distance matrices above (seems to better handle missing data than PCA does)
 - PERMANOVA to test for differences between groups
 
 
-
-* DEICODE is a tool box for running Robust Aitchison PCA on sparse compositional omics datasets, linking specific features to beta-diversity ordination.
-
-
+### Unifrac PCoA performed on Unweighted UniFrac distance matrix 
 ![unifrac](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/unifrac_salinity_all-sites.png?raw=true)
-Unifrac of all samples colored by salinity designation from SWMP collected data
+Samples colored by minimum salinity from SWMP collected data within X days of eDNA sample collection. This is an interactive plot that can be found [here](qiime-files/all-sites)
 
 
-The folders containing:  
+### Results:  
 
 Bar-plot images of sites broken up by regions [here](images/barplots)  
 

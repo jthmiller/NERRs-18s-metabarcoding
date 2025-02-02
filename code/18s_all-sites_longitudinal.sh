@@ -278,10 +278,22 @@ qiime longitudinal linear-mixed-effects \
   --m-metadata-file metadata.tsv \
   --m-metadata-file qiime-files/all-sites/core-diversity-phylogenetic/shannon_vector.qza \
   --p-metric shannon_entropy \
-  --p-group-columns Region \
+  --p-group-columns region \
   --p-state-column Quarter_num \
   --p-individual-id-column Site_Corrected \
   --o-visualization qiime-files/visualization-files/all-sites/linear-mixed-effects-region.qzv
+
+
+
+qiime longitudinal linear-mixed-effects \
+  --m-metadata-file metadata.tsv \
+  --m-metadata-file qiime-files/all-sites/core-diversity-phylogenetic/shannon_vector.qza \
+  --p-metric shannon_entropy \
+  --p-group-columns salinity \
+  --p-state-column Quarter_num \
+  --p-individual-id-column Site_Corrected \
+  --o-visualization qiime-files/visualization-files/all-sites/linear-mixed-effects-salinity.qzv
+
 
 "/home/users/jtm1171/.conda/envs/qiime2-amplicon-2024.5/lib/python3.9/site-packages/q2_types/sample_data/_transformer.py:27: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_numeric without passing `errors` and catch exceptions explicitly instead
   df[cols] = df[cols].apply(pd.to_numeric, errors='ignore')"

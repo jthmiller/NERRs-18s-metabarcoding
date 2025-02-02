@@ -91,12 +91,14 @@ qiime diversity core-metrics-phylogenetic \
     --p-number-of-features 50\
     --o-visualization core-diversity-phylogenetic/phylo-empress.qzv
 
+
+### Rerun this
 qiime diversity beta-group-significance \
-    --i-distance-matrix core-diversity-phylogenetic/phylo-distance.qza \
-    --m-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
+    --i-distance-matrix qiime-files/all-sites/core-diversity-phylogenetic/phylo-distance.qza \
+    --m-metadata-file metadata.tsv \
     --m-metadata-column salinity \
     --p-method permanova \
-    --o-visualization core-diversity-phylogenetic/phylo-salinity_significance.qzv
+    --o-visualization qiime-files/all-sites/core-diversity-phylogenetic/phylo-salinity_significance.qzv
    
 ## Qu
 ## qiime 2020.8 needed
@@ -262,13 +264,36 @@ Linear mixed effects (LME) models test the relationship between a single respons
 
 
 qiime longitudinal linear-mixed-effects \
-  --m-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
-  --m-metadata-file core-diversity/shannon_vector.qza \
-  --p-metric shannon \
+  --m-metadata-file metadata.tsv \
+  --m-metadata-file qiime-files/all-sites/core-diversity-phylogenetic/shannon_vector.qza \
+  --p-metric shannon_entropy \
   --p-group-columns NERR,Region,Ocean,North_South,salinity \
   --p-state-column Quarter_num \
   --p-individual-id-column Site_Corrected \
-  --o-visualization linear-mixed-effects.qzv
+  --o-visualization qiime-files/visualization-files/all-sites/linear-mixed-effects.qzv
+
+
+
+qiime longitudinal linear-mixed-effects \
+  --m-metadata-file metadata.tsv \
+  --m-metadata-file qiime-files/all-sites/core-diversity-phylogenetic/shannon_vector.qza \
+  --p-metric shannon_entropy \
+  --p-group-columns Region \
+  --p-state-column Quarter_num \
+  --p-individual-id-column Site_Corrected \
+  --o-visualization qiime-files/visualization-files/all-sites/linear-mixed-effects-region.qzv
+
+"/home/users/jtm1171/.conda/envs/qiime2-amplicon-2024.5/lib/python3.9/site-packages/q2_types/sample_data/_transformer.py:27: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_numeric without passing `errors` and catch exceptions explicitly instead
+  df[cols] = df[cols].apply(pd.to_numeric, errors='ignore')"
+
+
+### Rerun this
+qiime diversity beta-group-significance \
+    --i-distance-matrix qiime-files/all-sites/core-diversity-phylogenetic/phylo-distance.qza \
+    --m-metadata-file metadata.tsv \
+    --m-metadata-column salinity \
+    --p-method permanova \
+    --o-visualization qiime-files/visualization-files/all-sites/phylo-salinity_significance.qzv
 
 
 qiime diversity core-metrics \

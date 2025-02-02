@@ -14,19 +14,22 @@ require(lubridate)
 ## what about clustering, then idedntifying the singleton taxa, and remove those asvs
 
 # learn hybrid silva
+
+# learn hybrid silva
 psilva <- qza_to_phyloseq(
-  tree="NERRS_18s_9_12_24_rooted-tree.qza", 
-  features='NERRS_18s_9_12_24_filtered-table.qza', 
-  taxonomy='NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza',
-  metadata='fixed-qiime-swmp-corrected-sample-metadata.tsv'
+  tree="qiime-files/input/NERRS_18s_9_12_24_rooted-tree.qza", 
+  features='qiime-files/input/NERRS_18s_9_12_24_filtered-table.qza', 
+  taxonomy='qiime-files/input/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza',
+  metadata='qiime-files/input/fixed-qiime-swmp-corrected-sample-metadata.tsv'
   )
 
 pcrux <- qza_to_phyloseq(
-  tree="NERRS_18s_9_12_24_rooted-tree.qza", 
-  features='NERRS_18s_9_12_24_filtered-table.qza', 
-  taxonomy='NERRS_18s_vsearch_taxonomy_10accepts_90perc_CRUX.qza',
-  metadata='fixed-qiime-swmp-corrected-sample-metadata.tsv'
+  tree="qiime-files/input/NERRS_18s_9_12_24_rooted-tree.qza", 
+  features='qiime-files/input/NERRS_18s_9_12_24_filtered-table.qza', 
+  taxonomy='qiime-files/input/NERRS_18s_vsearch_taxonomy_10accepts_90perc_CRUX.qza',
+  metadata='qiime-files/input/fixed-qiime-swmp-corrected-sample-metadata.tsv'
   )
+
 
 tax_table(psilva)[,'Kingdom'] <- gsub('d__','', tax_table(psilva)[,'Kingdom'])
 tax_table(pcrux)[,'Kingdom'] <- gsub('d__','', tax_table(pcrux)[,'Kingdom'])

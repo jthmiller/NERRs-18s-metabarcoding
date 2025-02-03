@@ -25,12 +25,8 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
 
 ### Unifrac PCoA performed on Unweighted UniFrac distance matrix 
 ![unifrac](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/unifrac_salinity_all-sites.png?raw=true)
-Samples colored by minimum salinity from SWMP collected data within X days of eDNA sample collection. This is an interactive plot that can be found [here](qiime-files/all-sites)
+Samples colored by minimum salinity from SWMP collected data within X days of eDNA sample collection. This is an interactive plot that can be found [here](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/unweighted_unifrac_emperor.qzv)
 
-[link to unweighted unifrac emperor](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/unweighted_unifrac_emperor.qzv)
-
-
-[link to phylo-salinity_significance](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-salinity_significance.qzv)
 
 
 
@@ -39,12 +35,6 @@ Samples colored by minimum salinity from SWMP collected data within X days of eD
 Bar-plot images of sites broken up by regions [here](images/barplots)  
 
 Network plots of sites broken up by regions [here](images/network-plots/)  
-
-
-
-[link](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/phylo-salinity_significance.qzv)
-
-
 
 
 
@@ -58,6 +48,8 @@ In order to account for the correlation among samples from the same subject we w
 
 The package 'gemelli' for qiime2 is used to perform CTF.  The gemelli tutorial can be found [here](https://github.com/biocore/gemelli/blob/master/ipynb/tutorials/IBD-Tutorial-QIIME2-CLI.md) and at doi: 10.1038/s41587-020-0660-7
 
+
+[link to phylo-salinity_significance](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-salinity_significance.qzv)
 
 
 

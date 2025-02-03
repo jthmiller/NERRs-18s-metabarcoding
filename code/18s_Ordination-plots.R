@@ -29,12 +29,14 @@ psv <- qza_to_phyloseq(
 ### Metadata
 sample_data(psk)$Quarter <- as.numeric(factor(sample_data(psk)$Quarter_num))
 
-sample_data(psk)[ which(  sample_data(psk)[,'Sal_Min.'] > 40 ),'Sal_Min.'] <- NA
-sample_data(psk)[,'salinity'] <- NA
-ind <- which(sample_data(psk)[,'Sal_Min.'] > 13)
-sample_data(psk)[ind,'salinity'] <- 'SW'
-ind <- which(sample_data(psk)[,'Sal_Min.'] < 13)
-sample_data(psk)[ind,'salinity'] <- 'FW'
+
+## AW updated salinity 
+##sample_data(psk)[ which(  sample_data(psk)[,'Sal_Min.'] > 40 ),'Sal_Min.'] <- NA
+##sample_data(psk)[,'salinity'] <- NA
+##ind <- which(sample_data(psk)[,'Sal_Min.'] > 13)
+##sample_data(psk)[ind,'salinity'] <- 'SW'
+##ind <- which(sample_data(psk)[,'Sal_Min.'] < 13)
+##sample_data(psk)[ind,'salinity'] <- 'FW'
 
 
 ## Env types

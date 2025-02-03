@@ -38,6 +38,9 @@ Bar-plot images of sites broken up by regions [here](images/barplots)
 Network plots of sites broken up by regions [here](images/network-plots/)  
 
 
+<a href="qiime-files/all-sites/genus-level_volatility_plot.qzv">Salinity-Sig</a>
+
+
 ## Longitudinal Analysis
 From the tutorial: Repeat measure experimental designs (e.g. time series) are a valid and powerful method to control for inter-individual variation. However, conventional dimensionality reduction methods can not account for the high-correlation of each subject to itself at a later time point. 
 

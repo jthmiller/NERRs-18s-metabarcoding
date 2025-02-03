@@ -58,57 +58,57 @@ qiime feature-table relative-frequency \
 
 ############################################################################################################
 qiime diversity core-metrics-phylogenetic \
-    --i-phylogeny NERRS_18s_9_12_24_rooted-tree.qza \
-    --i-table NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
+    --i-phylogeny qiime-files/input/NERRS_18s_9_12_24_rooted-tree.qza \
+    --i-table qiime-files/input/NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
     --p-with-replacement \
     --p-sampling-depth 1000 \
-    --m-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
-    --output-dir core-diversity-phylogenetic/
+    --m-metadata-file metadata.tsv \
+    --output-dir qiime-files/core-diversity-phylogenetic
 
 ############################################################################################################
 
 ############################################################################################################
 
   qiime gemelli phylogenetic-rpca-with-taxonomy \
-      --i-table NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
-      --i-phylogeny NERRS_18s_9_12_24_rooted-tree.qza \
-      --m-taxonomy-file NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
+      --i-table qiime-files/input/NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
+      --i-phylogeny qiime-files/input/NERRS_18s_9_12_24_rooted-tree.qza \
+      --m-taxonomy-file qiime-files/input/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
       --p-min-feature-count 50 \
       --p-min-sample-count 500 \
-      --o-biplot core-diversity-phylogenetic/phylo-ordination.qza \
-      --o-distance-matrix core-diversity-phylogenetic/phylo-distance.qza \
-      --o-counts-by-node-tree core-diversity-phylogenetic/phylo-tree.qza \
-      --o-counts-by-node core-diversity-phylogenetic/phylo-table.qza \
-      --o-t2t-taxonomy core-diversity-phylogenetic/phylo-taxonomy.qza
+      --o-biplot qiime-files/core-diversity-phylogenetic/phylo-ordination.qza \
+      --o-distance-matrix qiime-files/core-diversity-phylogenetic/phylo-distance.qza \
+      --o-counts-by-node-tree qiime-files/core-diversity-phylogenetic/phylo-tree.qza \
+      --o-counts-by-node qiime-files/core-diversity-phylogenetic/phylo-table.qza \
+      --o-t2t-taxonomy qiime-files/core-diversity-phylogenetic/phylo-taxonomy.qza
 
   qiime empress community-plot\
-    --i-tree core-diversity-phylogenetic/phylo-tree.qza\
-    --i-feature-table core-diversity-phylogenetic/phylo-table.qza\
-    --i-pcoa core-diversity-phylogenetic/phylo-ordination.qza\
+    --i-tree qiime-files/core-diversity-phylogenetic/phylo-tree.qza\
+    --i-feature-table qiime-files/core-diversity-phylogenetic/phylo-table.qza\
+    --i-pcoa qiime-files/core-diversity-phylogenetic/phylo-ordination.qza\
     --m-sample-metadata-file qiime-swmp-corrected-sample-metadata.tsv\
-    --m-feature-metadata-file core-diversity-phylogenetic/phylo-taxonomy.qza\
+    --m-feature-metadata-file qiime-files/core-diversity-phylogenetic/phylo-taxonomy.qza\
     --p-filter-missing-features\
     --p-number-of-features 50\
-    --o-visualization core-diversity-phylogenetic/phylo-empress.qzv
+    --o-visualization qiime-files/core-diversity-phylogenetic/phylo-empress.qzv
 
 
 ### Rerun this
 qiime diversity beta-group-significance \
-    --i-distance-matrix qiime-files/all-sites/core-diversity-phylogenetic/phylo-distance.qza \
+    --i-distance-matrix qiime-files/core-diversity-phylogenetic/phylo-distance.qza \
     --m-metadata-file metadata.tsv \
     --m-metadata-column salinity \
     --p-method permanova \
-    --o-visualization qiime-files/all-sites/core-diversity-phylogenetic/phylo-salinity_significance.qzv
+    --o-visualization qiime-files/core-diversity-phylogenetic/phylo-salinity_significance.qzv
    
 ## Qu
 ## qiime 2020.8 needed
 
-qiime qurro loading-plot \
-    --i-ranks core-diversity-phylogenetic/phylo-ordination.qza \
-    --i-table core-diversity-phylogenetic/phylo-table.qza \
-    --m-sample-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
-    --m-feature-metadata-file core-diversity-phylogenetic/phylo-taxonomy.qza \
-    --o-visualization core-diversity-phylogenetic/phylo-qurro_plot.qzv   
+# qiime qurro loading-plot \
+#     --i-ranks core-diversity-phylogenetic/phylo-ordination.qza \
+#     --i-table core-diversity-phylogenetic/phylo-table.qza \
+#     --m-sample-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
+#     --m-feature-metadata-file core-diversity-phylogenetic/phylo-taxonomy.qza \
+#     --o-visualization core-diversity-phylogenetic/phylo-qurro_plot.qzv   
 ############################################################################################################
 
 
@@ -120,33 +120,33 @@ conda create -n qurro python qurro qiime2
 ### currently doesnt work on filtered data
 
 qiime longitudinal feature-volatility \
-  --i-table NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
-  --m-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
+  --i-table qiime-files/input/NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
+  --m-metadata-file metadata.tsv \
   --p-state-column Quarter_num \
   --p-individual-id-column Site_Corrected \
   --p-n-estimators 10 \
   --p-random-state 17 \
-  --output-dir core-diversity-phylogenetic/longitudinal-filtered
+  --output-dir qiime-files/core-diversity-phylogenetic/longitudinal-filtered
 
 qiime longitudinal feature-volatility \
-  --i-table NERRS_18s_9_12_24_filtered-table.qza \
-  --m-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
+  --i-table qiime-files/input/NERRS_18s_9_12_24_filtered-table.qza \
+  --m-metadata-file metadata.tsv \
   --p-state-column Quarter_num \
   --p-individual-id-column Site_Corrected \
   --p-n-estimators 10 \
   --p-random-state 17 \
-  --output-dir core-diversity-phylogenetic/longitudinal
+  --output-dir qiime-files/core-diversity-phylogenetic/longitudinal
 
 ### Feature volitility on entire dataset without Bacteria and Humans low freq features removed
 ### This doesnt factor in the relationship between sites within a NERR
 qiime longitudinal feature-volatility \
-  --i-table NERRS_18s_euks_hum_genus-table.qza \
-  --m-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
+  --i-table qiime-files/input/NERRS_18s_euks_hum_genus-table.qza \
+  --m-metadata-file metadata.tsv \
   --p-state-column Quarter_num \
   --p-individual-id-column Site_Corrected \
   --p-n-estimators 10 \
   --p-random-state 17 \
-  --output-dir core-diversity-phylogenetic/longitudinal-genus
+  --output-dir qiime-files/core-diversity-phylogenetic/longitudinal-genus
 
 
   
@@ -157,15 +157,15 @@ qiime longitudinal feature-volatility \
 qiime gemelli ctf -> qiime longitudinal volatility -> qiime emperor biplot
 ### gemelli ctf
 qiime gemelli ctf\
-    --i-table NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
-    --m-sample-metadata-file qiime-swmp-corrected-sample-metadata.tsv \
-    --m-feature-metadata-file NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
+    --i-table qiime-files/input/NERRS_18s_9_12_24_euks_hum_filtered-table.qza \
+    --m-sample-metadata-file metadata.tsv \
+    --m-feature-metadata-file qiime-files/input/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
     --p-state-column Quarter_num\
     --p-individual-id-column Site_Corrected\
     --output-dir core-diversity-phylogenetic/gemelli-ctf-asv
 
 qiime longitudinal volatility \
-    --i-table relative_NERRS_18s_9_12_24_euks_hum_freq-table.qza \
+    --i-table qiime-files/input/relative_NERRS_18s_9_12_24_euks_hum_freq-table.qza \
     --p-state-column Quarter_num \
     --m-metadata-file core-diversity-phylogenetic/gemelli-ctf-asv/state_subject_ordination.qza \
     --p-individual-id-column subject_id \

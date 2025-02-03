@@ -1,7 +1,7 @@
 
 
 ## testing
-site <- regions[1]
+# site <- regions[1]
 phyloseq <- pcrux
 outappend <- '_crux'
 outdir <- 'images/network-plots/'
@@ -28,9 +28,13 @@ plot_all_ig <- function(site, phyloseq, outappend, outdir){
   #ig_genus <- make_network(region, max.dist=0.45, distance='dpcoa')
   #igraph_options(verbose = TRUE)
 
-  ig_asv_unifrac <- plot_network(ig_asv_unifrac, region, color="salinity", shape="NERR", curved=TRUE)
-  ig_asv_jacard <- plot_network(ig_asv_jacard, region, color="salinity", shape="NERR", curved=TRUE)
-  ig_genus_unifrac <- plot_network(ig_genus_unifrac, region, color="salinity", shape="NERR", curved=TRUE)
+  #ig_asv_unifrac <- plot_network(ig_asv_unifrac, region, color="salinity", shape="NERR", curved=TRUE)
+  #ig_asv_jacard <- plot_network(ig_asv_jacard, region, color="salinity", shape="NERR", curved=TRUE)
+  #ig_genus_unifrac <- plot_network(ig_genus_unifrac, region, color="salinity", shape="NERR", curved=TRUE)
+
+  ig_asv_unifrac <- plot_network(ig_asv_unifrac, region, color="salinity", shape="NERR")
+  ig_asv_jacard <- plot_network(ig_asv_jacard, region, color="salinity", shape="NERR")
+  ig_genus_unifrac <- plot_network(ig_genus_unifrac, region, color="salinity", shape="NERR")
 
   out_asv_unifrac <- paste0(site, paste0(outappend, "asv_unifrac_ig-network.pdf"))
   out_asv_jacard <- paste0(site, paste0(outappend, "asv_jacard_ig-network.pdf"))

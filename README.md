@@ -27,7 +27,7 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
 ![unifrac](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/unifrac_salinity_all-sites.png?raw=true)
 Samples colored by minimum salinity from SWMP collected data within X days of eDNA sample collection. This is an interactive plot that can be found [here](qiime-files/all-sites)
 
-
+[link to qiime view](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/phylo-salinity_significance.qzv)
 
 
 

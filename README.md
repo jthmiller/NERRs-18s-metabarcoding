@@ -39,7 +39,11 @@ Network plots of sites broken up by regions [here](images/network-plots/)
 
 
 
-[link](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/phylo-salinity_significance.qzv)
+[link](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/phylo-salinity_significance.qzv)
+
+
+
+
 
 ## Longitudinal Analysis
 From the tutorial: Repeat measure experimental designs (e.g. time series) are a valid and powerful method to control for inter-individual variation. However, conventional dimensionality reduction methods can not account for the high-correlation of each subject to itself at a later time point. 

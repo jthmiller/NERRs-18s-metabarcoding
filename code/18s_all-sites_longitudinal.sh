@@ -92,6 +92,8 @@ qiime diversity core-metrics-phylogenetic \
     --o-visualization qiime-files/core-diversity-phylogenetic/phylo-empress.qzv
 
 
+all-sites/unweighted_unifrac_emperor
+
 ### Rerun this
 qiime diversity beta-group-significance \
     --i-distance-matrix qiime-files/core-diversity-phylogenetic/phylo-distance.qza \

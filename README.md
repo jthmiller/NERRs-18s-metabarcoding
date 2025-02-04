@@ -38,6 +38,20 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
 
 [volatility_plot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/volatility_plot.qzv)
 
+[asv volatility_plot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/asv_volatility_plot.qzv)
+
+### New England NERRS results
+[NE_subject_biplot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/regional/NE_with-repl/NE_gemelli-ctf/NE_subject_biplot.qzv)
+
+[state_subject_ordination](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/regional/NE_with-repl/NE_gemelli-ctf/state_subject_ordination.qzv)
+
+[accuracy_results](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/regional/NE_with-repl/NE_ecam-feat-volatility/accuracy_results.qzv)
+
+[volatility_plot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/volatility_plot.qzv)
+
+[genus-level_volatility](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/genus-level_volatility_plot.qzv)
+
+[ASV-level_volatility](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/asv-level_volatility_plot.qzv)
 
 ### Unifrac PCoA performed on Unweighted UniFrac distance matrix 
 ![unifrac](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/unifrac_salinity_all-sites.png?raw=true)

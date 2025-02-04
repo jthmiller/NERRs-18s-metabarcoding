@@ -24,13 +24,19 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
     [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/core-diversity-phylogenetic/weighted_unifrac_emperor.qzv)
 
 
-- 
+
+## These files still need to be updated with new salinity annotation 
+[phylo-empress](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-empress.qzv)
+[linear-mixed-effects-by-region](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/linear-mixed-effects-region.qzv)
+[linear-mixed-effects-by-salinity](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/linear-mixed-effects-salinity.qzv)
+[phylo-salinity_significance](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-salinity_significance.qzv)
+[rf-state_subject_ordination](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/rf-state_subject_ordination.qzv)
+[volatility_plot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/volatility_plot.qzv)
 
 
 ### Unifrac PCoA performed on Unweighted UniFrac distance matrix 
 ![unifrac](https://github.com/jthmiller/NERRs-18s-metabarcoding/blob/main/images/sample-plots/unifrac_salinity_all-sites.png?raw=true)
 Samples colored by minimum salinity from SWMP collected data within X days of eDNA sample collection. This is an interactive plot that can be found [here](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/core-diversity-phylogenetic/weighted_unifrac_emperor.qzv)
-
 
 
 ### Results:  
@@ -39,7 +45,7 @@ Bar-plot images of sites broken up by regions [here](images/barplots)
 
 Network plots of sites broken up by regions [here](images/network-plots/)  
 
- We also perfomed PERMANOVA to test for differences between groups.
+We also perfomed PERMANOVA to test for differences between groups.
 
 ## Longitudinal Analysis
 From the tutorial: Repeat measure experimental designs (e.g. time series) are a valid and powerful method to control for inter-individual variation. However, conventional dimensionality reduction methods can not account for the high-correlation of each subject to itself at a later time point. 

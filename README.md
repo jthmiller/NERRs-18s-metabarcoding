@@ -27,10 +27,15 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
 
 ## These files still need to be updated with new salinity annotation 
 [phylo-empress](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-empress.qzv)
+
 [linear-mixed-effects-by-region](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/linear-mixed-effects-region.qzv)
+
 [linear-mixed-effects-by-salinity](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/linear-mixed-effects-salinity.qzv)
+
 [phylo-salinity_significance](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-salinity_significance.qzv)
+
 [rf-state_subject_ordination](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/rf-state_subject_ordination.qzv)
+
 [volatility_plot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/volatility_plot.qzv)
 
 

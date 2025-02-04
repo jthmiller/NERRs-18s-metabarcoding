@@ -6,6 +6,8 @@ Metabarcoding analysis for NERRs sites sampled quarterly. Metadata for all sites
 
 
 ## Core diversity metrics 
+PCoA is performed on distance matrices for the metrics below (seems to better handle missing data than PCA does). 
+
 More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-beta-diversity
 * Alpha diversity
     * Shannon’s diversity index (a quantitative measure of community richness)
@@ -22,7 +24,7 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
     [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/core-diversity-phylogenetic/weighted_unifrac_emperor.qzv)
 
 
-- PCoA is performed on distance matrices above (seems to better handle missing data than PCA does). We also perfomed PERMANOVA to test for differences between groups. 
+- 
 
 
 ### Unifrac PCoA performed on Unweighted UniFrac distance matrix 
@@ -37,7 +39,7 @@ Bar-plot images of sites broken up by regions [here](images/barplots)
 
 Network plots of sites broken up by regions [here](images/network-plots/)  
 
-
+ We also perfomed PERMANOVA to test for differences between groups.
 
 ## Longitudinal Analysis
 From the tutorial: Repeat measure experimental designs (e.g. time series) are a valid and powerful method to control for inter-individual variation. However, conventional dimensionality reduction methods can not account for the high-correlation of each subject to itself at a later time point. 

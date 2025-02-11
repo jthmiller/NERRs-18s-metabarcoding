@@ -15,39 +15,39 @@ More complete descriptions here: https://docs.onecodex.com/en/articles/4150649-b
     * Faith’s Phylogenetic Diversity (a qualitiative measure of community richness that incorporates phylogenetic relationships between the features)
     * Evenness (or Pielou’s Evenness; a measure of community evenness)
 * Beta diversity
-    * Jaccard distance (a qualitative measure of community dissimilarity. Qualitative - presence / absence - percentage of taxa not found in both samples) [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/core-diversity-phylogenetic/jaccard_emperor.qzv)
-    * Bray-Curtis distance (a quantitative measure of community dissimilarity. Takes into consideration abundance and presence absence) [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/core-diversity-phylogenetic/bray_curtis_emperor.qzv)
+    * Jaccard distance (a qualitative measure of community dissimilarity. Qualitative - presence / absence - percentage of taxa not found in both samples) [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/core-diversity-phylogenetic/jaccard_emperor.qzv)
+    * Bray-Curtis distance (a quantitative measure of community dissimilarity. Takes into consideration abundance and presence absence) [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/core-diversity-phylogenetic/bray_curtis_emperor.qzv)
 
     * Unweighted UniFrac distance (a qualitative measure of community dissimilarity that incorporates phylogenetic relationships between the features. Percentage of phylogenetic branch length not found in both samples)
-    [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/core-diversity-phylogenetic/unweighted_unifrac_emperor.qzv)
+    [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/core-diversity-phylogenetic/unweighted_unifrac_emperor.qzv)
     * Weighted UniFrac distance (a quantitative measure of community dissimilarity that incorporates phylogenetic relationships between the features. Similar to Bray-Curtis but takes into consideration phylogenetic relationships)
-    [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/core-diversity-phylogenetic/weighted_unifrac_emperor.qzv)
+    [All Samples](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/core-diversity-phylogenetic/weighted_unifrac_emperor.qzv)
 
 
 
 ## These files still need to be updated with new salinity annotation 
-[phylo-empress](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-empress.qzv)
+[phylo-empress](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/phylo-empress.qzv)
 
-[linear-mixed-effects-by-region](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/linear-mixed-effects-region.qzv)
+[linear-mixed-effects-by-region](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/linear-mixed-effects-region.qzv)
 
-[linear-mixed-effects-by-salinity](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/linear-mixed-effects-salinity.qzv)
+[linear-mixed-effects-by-salinity](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/linear-mixed-effects-salinity.qzv)
 
-[phylo-salinity_significance](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/phylo-salinity_significance.qzv)
+[phylo-salinity_significance](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/phylo-salinity_significance.qzv)
 
-[rf-state_subject_ordination](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/rf-state_subject_ordination.qzv)
+[rf-state_subject_ordination](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/rf-state_subject_ordination.qzv)
 
-[volatility_plot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/volatility_plot.qzv)
+[volatility_plot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/volatility_plot.qzv)
 
-[genus-level_volatility](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/genus-level_volatility_plot.qzv)
+[genus-level_volatility](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/genus-level_volatility_plot.qzv)
 
-[ASV-level_volatility](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/all-sites/asv-level_volatility_plot.qzv)
+[ASV-level_volatility](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/all-sites/asv-level_volatility_plot.qzv)
 
 ### New England NERRS results
-[NE_subject_biplot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/regional/NE_with-repl/NE_gemelli-ctf/NE_subject_biplot.qzv)
+[NE_subject_biplot](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/regional/NE_with-repl/NE_gemelli-ctf/NE_subject_biplot.qzv)
 
-[state_subject_ordination](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/regional/NE_with-repl/NE_gemelli-ctf/state_subject_ordination.qzv)
+[state_subject_ordination](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/regional/NE_with-repl/NE_gemelli-ctf/state_subject_ordination.qzv)
 
-[accuracy_results](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/regional/NE_with-repl/NE_ecam-feat-volatility/accuracy_results.qzv)
+[accuracy_results](https://view.qiime2.org/visualization/?src=https://jthmiller.github.io/files/results/nerrs/regional/NE_with-repl/NE_ecam-feat-volatility/accuracy_results.qzv)
 
 
 

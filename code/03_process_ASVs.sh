@@ -64,6 +64,14 @@ qiime taxa collapse \
 qiime feature-table relative-frequency \
   --i-table results/NERRS_18s_euks_hum_freq-table.qza \
   --o-relative-frequency-table results/relative_NERRS_18s_euks_hum_freq-table.qza
+
+
+qiime taxa filter-seqs \
+  --i-sequences sequences.qza \
+  --i-taxonomy taxonomy.qza \
+  --p-include p__ \
+  --p-exclude mitochondria,chloroplast \
+  --o-filtered-sequences sequences-with-phyla-no-mitochondria-no-chloroplast.qza
 ############################################################################################
 ############################################################################################
 

@@ -2,6 +2,17 @@
 ##################################################################
 ##################################################################
 
+
+# Collapse all replicates and all sites to get a single barplot for each site, over quarters
+## Ask nate if we can see his poster
+
+
+
+
+
+
+
+
 plot_all_bars <- function(site, phyloseq, outappend){
 
   subsite <- prune_samples(meta(phyloseq)$Region == site, phyloseq)

@@ -1,4 +1,4 @@
-#!/home/users/jtm1171/.conda/envs/qiime2-amplicon-2024.5/bin/python3.9
+#!/mnt/gpfs01/home/watts/jtm1171/.conda/envs/qiime2-amplicon-2024.5/bin/python3.9
 import sys
 import pandas as pd
 from qiime2 import Metadata
@@ -13,3 +13,5 @@ mf.index.name = '#SampleID'
 outname = sys.argv[1].split('.')[0] + '-subject-metadata.tsv'
 mf.to_csv(outname, sep='\t')
 quit()
+
+### 

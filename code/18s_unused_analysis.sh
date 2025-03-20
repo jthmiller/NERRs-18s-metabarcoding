@@ -139,3 +139,72 @@ for rgn in Gulf NE N-Pacific Pacific-Island; do
     --p-number-of-features 8
 
 
+
+meta <- read.csv('metadata.csv')
+
+awk 'BEGIN {FS=","; OFS="\t"} {$1=$1; print}' metadata.csvws > try.tsv
+
+meta <- read.csv('metadata.csvws')
+meta <- meta[,grep('.1', colnames(meta), invert=T)]
+write.table(meta, 'meta2.tsv', sep='\t', quote=F, row.names=F)
+
+
+
+
+
+meta <- read.table('try.tsv', sep='\t', header=T)
+
+meta <- read.table('metadata.tsv', sep='\t', header=T)
+
+meta <- apply(meta,1,gsub,pattern=' ', replacement='')
+meta <- data.frame(t(meta))
+meta <- meta[,grep('.1', colnames(meta), invert=T)]
+
+meta[grep('AB151w0523231',meta[,1]),]
+
+apply(meta,1,grep,pattern='\\t',value=T)
+
+
+write.table(meta, 'meta-tmp-2.tsv', sep='\t', quote=F, row.names=F)
+
+do.call(rbind, met)
+
+
+grep -r '[[:blank:]]$' met*
+egrep ".* +$" met*
+
+
+meta <- read.table('metadata.csvws', sep=',', header=T)
+
+metadata.csvws
+
+awk -v FS=',' '{print NF}' metadata.csvws | sort | uniq -c
+sed 's/ *,/,/' metadata.csv | sed 's/ *, */,/' | awk -v FS=',' '{print NF}'|  sort | uniq -c
+
+
+awk -v FS=',' -v OFS='\t' '{print $0}' metadata.csv
+
+
+sed 's/,,/,NA,/' metadata.csv >  metadata.csvws
+
+
+sed 's/ *,/,/' metadata.csv | sed 's/ *, */,/' | tr ',' '\t' > metadata.tsvws
+
+sed 's/ *,/,/' metadata.csv | sed 's/ *, */,/' | awk '{$1=$1};1' > metadata.csvws
+tr ',' '\t' < metadata.csvws > metadata.tsvws
+
+awk '{$1=$1};1' metadata.tsvws | awk '{print NF}' | sort | uniq -c
+awk '{print NF}' metadata.tsvws | sort | uniq -c
+
+
+awk 'BEGIN {FS=","; OFS="\t"} {$1=$1; print}' metadata.csv > try.tsv
+awk '{print NF}' try.tsv | head | sort | uniq -c
+
+head -n2 try.tsv
+awk 'NF==178{print $0}'  try.tsv | head -n2
+
+
+
+
+
+

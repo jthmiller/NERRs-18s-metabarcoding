@@ -50,64 +50,25 @@ qiime taxa barplot \
 
 ## OTUs
 qiime taxa collapse \
-  --i-table results/NERRS_18s_euks_hum_freq-table.qza \
+  --i-table results/NERRS_18s_euks_hum_samples-table.qza \
   --i-taxonomy results/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
   --p-level 5 \
   --o-collapsed-table results/NERRS_18s_euks_hum_family-table.qza
 
 qiime taxa collapse \
-  --i-table results/NERRS_18s_euks_hum_freq-table.qza \
+  --i-table results/NERRS_18s_euks_hum_samples-table.qza \
   --i-taxonomy results/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
   --p-level 7 \
   --o-collapsed-table results/NERRS_18s_euks_hum_genus-table.qza
 
 qiime feature-table relative-frequency \
-  --i-table results/NERRS_18s_euks_hum_freq-table.qza \
+  --i-table results/NERRS_18s_euks_hum_samples-table.qza \
   --o-relative-frequency-table results/relative_NERRS_18s_euks_hum_freq-table.qza
 
-
-qiime taxa filter-seqs \
-  --i-sequences sequences.qza \
-  --i-taxonomy taxonomy.qza \
-  --p-include p__ \
-  --p-exclude mitochondria,chloroplast \
-  --o-filtered-sequences sequences-with-phyla-no-mitochondria-no-chloroplast.qza
 ############################################################################################
 ############################################################################################
 
 
-
-############################################################################################
-############################################################################################
-## Filter by region
-qiime feature-table filter-samples \
-  --i-table results/NERRS_18s_euks_hum_samples-table.qza  \
-  --m-metadata-file metadata/metadata.tsv \
-  --p-where "NERR='HE'" \
-  --o-filtered-table results/Pacific-Island_NERRS_18s-table.qza
-
-## Filter by region
-qiime feature-table filter-samples \
-  --i-table results/NERRS_18s_euks_hum_samples-table.qza  \
-  --m-metadata-file metadata/metadata.tsv \
-  --p-where "Region='Gulf'" \
-  --o-filtered-table results/Gulf_NERRS_18s-table.qza
-
-## Filter by region
-qiime feature-table filter-samples \
-  --i-table results/NERRS_18s_euks_hum_samples-table.qza  \
-  --m-metadata-file metadata/metadata.tsv \
-  --p-where "Region='NE'" \
-  --o-filtered-table results/NE_NERRS_18s-table.qza
-
-## Filter by region
-qiime feature-table filter-samples \
-  --i-table results/NERRS_18s_euks_hum_samples-table.qza  \
-  --m-metadata-file metadata/metadata.tsv \
-  --p-where "Region='N-Pacific'" \
-  --o-filtered-table results/N-Pacific_NERRS_18s-table.qza
-############################################################################################
-############################################################################################
 
 
 

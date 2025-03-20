@@ -1,0 +1,22 @@
+
+#ASVs to check
+extremely long branch lengths
+
+
+d__Eukaryota	p__Euglenozoa	c__Diplonemea	o__Diplonemea	f__Diplonemea	g__Hemistasia	s__Hemistasia_phaeocysticola
+>Hemistasia_phaeocysticola
+df77574a97c7074c04b7893b65efdfda
+
+df40d3cabaf00bc85cf68074d02398be
+
+>Bastiania_gracilis 
+f46383fc55ce786b604cb0f158ee9a03
+
+>Petalomonas_sphagnophila
+a6a5d86980dce895cf92241d8b99779a
+
+
+
+
+d__Eukaryota;p__Diatomea;c__Bacillariophyceae;o__Bacillariophyceae;f__Bacillariophyceae;g__Navicula;__
+d__Eukaryota;p__Diatomea;c__Bacillariophyceae;o__Bacillariophyceae;f__Bacillariophyceae;g__Gomphonema

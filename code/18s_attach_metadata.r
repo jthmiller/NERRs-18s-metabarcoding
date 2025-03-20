@@ -105,7 +105,7 @@ wq <- c('Temp','SpCond','Sal','DO_pct','DO_mgl','Depth','pH','Turb')
 nut <- c('PO4F','NH4F','NO23F','CHLA_N')
 met <- c('ATemp','WSpd','MaxWSpd','TotPAR','TotPrcp')
 
-## remove bad data
+## clean data
 
 
 summary(nut_data[,nut])
@@ -340,11 +340,11 @@ sample_data(ps)[ 'SSWSw0823231','Site_Corrected'] <- 'SSWS'
 sample_data(ps)[ 'SSWSw0823232','Site_Corrected'] <- 'SSWS'
 sample_data(ps)[ 'SSWSw0823233','Site_Corrected'] <- 'SSWS'
 
-sample_data(ps)[which( meta(ps)$Region == 'SE'),'Region'] <- 'Gulf'
+
 
 md <- meta(ps)
 sample_data(ps)[ ,'Quarter_num'] <- as.numeric(factor(as.numeric(md$Quarter_num)))
-sample_data(ps)[ ,'NERR_SITE_QTR'] <- paste(md$Site_Corrected, paste0('Q',  md$Quarter_num), sep="_")
+sample_data(pssample_data(ps)[which( meta(ps)$Region == 'SE'),'Region'] <- 'Gulf')[ ,'NERR_SITE_QTR'] <- paste(md$Site_Corrected, paste0('Q',  md$Quarter_num), sep="_")
 
 
 ### write the metadata
@@ -352,3 +352,15 @@ df <- meta(ps)
 SampleID <- rownames(df)
 df <- cbind(SampleID,df)
 write.table(df,'fixed-qiime-swmp-corrected-sample-metadata.tsv',sep = '\t', quote=F, row.names=F)
+
+
+
+meta <- read.csv('metadata.csvws')
+meta <- meta[,grep('.1', colnames(meta), invert=T)]
+colnames(meta) <- gsub('\\.','',colnames(meta))
+meta[,'Quarter_num'] <- as.numeric(factor(as.numeric(meta[,'Quarter_num'])))
+colnames(meta) <- gsub("XSampleID","#SampleID",colnames(meta))
+
+meta[which( meta$Region == 'Gulf'),'Region'] <- 'SE'
+
+write.table(meta, 'metadata.tsv', sep='\t', quote=F, row.names=F)

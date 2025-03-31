@@ -1,5 +1,8 @@
 ### Idea: use indicator species 
 
+
+
+Diatomea
 ############################################################################################
 ############################################################################################
 ### Filter table
@@ -25,6 +28,15 @@ qiime taxa filter-table \
     --i-taxonomy results/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
     --p-exclude "s__Homo_sapiens" \
     --o-filtered-table results/NERRS_18s_euks_hum_samples-table.qza 
+
+# conda activate qiime2-amplicon-2024.5
+## Filter high copy number taxa
+qiime taxa filter-table \
+    --i-table results/NERRS_18s_euks_hum_samples-table.qza  \
+    --i-taxonomy results/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza \
+    --p-exclude p__Bacillariophyta,p__Ciliophora,c__Dinophyceae \
+    --o-filtered-table results/NERRS_18s_euks_copy-Num-filtered-table.qza 
+
 
 ## Filter low frequency features
 qiime feature-table filter-features-conditionally \
@@ -67,7 +79,6 @@ qiime feature-table relative-frequency \
 
 ############################################################################################
 ############################################################################################
-
 
 
 
@@ -122,11 +133,11 @@ qiime diversity alpha-group-significance \
 ############################################################################################
 
 
-rsync -chavzP --stats gracem25@cedar.alliancecan.ca:test.fq.gz /home-wd/home/unhAW/jtmiller/watts/raw-data/cobb.sr.unh.edu/managed/230728_A01346_0115_AHM35KDRX2_16Mer072823-AW-NERRPBSF-MFNX071123/reads/PBBPtb051023_S4_L001_R2_001.fastq.gz
+# rsync -chavzP --stats gracem25@cedar.alliancecan.ca:test.fq.gz /home-wd/home/unhAW/jtmiller/watts/raw-data/cobb.sr.unh.edu/managed/230728_A01346_0115_AHM35KDRX2_16Mer072823-AW-NERRPBSF-MFNX071123/reads/PBBPtb051023_S4_L001_R2_001.fastq.gz
+# rsync -avz -e ssh PBBPtb051023_S4_L001_R2_001.fastq.gz gracem25@cedar.alliancecan.ca:test.fq.gz
 
 
 
-rsync -avz -e ssh PBBPtb051023_S4_L001_R2_001.fastq.gz gracem25@cedar.alliancecan.ca:test.fq.gz
 
 
- /path/to/local/storage
+

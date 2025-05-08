@@ -18,8 +18,17 @@ psilva <- qza_to_phyloseq(
   tree="results/NERRS_18s_9_12_24_rooted-tree.qza", 
   features='results/NERRS_18s_euks_hum_samples-table.qza', 
   taxonomy='results/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza',
-  metadata='metadata/phylo-metadata.tsv'
+  metadata='metadata/phyloseq-metadata.tsv'
   )
+
+psilva <- qza_to_phyloseq(
+  tree="results/NERRS_18s_9_12_24_rooted-tree.qza", 
+  features='results/NERRS_18s_euks_hum_samples-table.qza', 
+  taxonomy='results/NERRS_18s_vsearch_taxonomy_10accepts_90perc-silva.qza',
+  metadata='metadata/phyloseq-metadata.tsv'
+  )
+
+
 
 pcrux <- qza_to_phyloseq(
   tree="results/NERRS_18s_9_12_24_rooted-tree.qza", 

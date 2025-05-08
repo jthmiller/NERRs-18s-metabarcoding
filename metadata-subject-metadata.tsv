@@ -1,46 +1,46 @@
-#SampleID	NERR	Site_Corrected	salinity
-AB141	AB	AB141	S
-AB151	AB	AB151	S
-AB161	AB	AB161	S
-AB181	AB	AB181	B
-AB221	AB	AB221	S
-GBGB	GB	GBGB	S
-GBLR	GB	GBLR	B
-GBOR	GB	GBOR	B
-GBSQ	GB	GBSQ	B
-GTMFM	GTM	GTMFM	S
-GTMPC	GTM	GTMPC	B
-GTMPI	GTM	GTMPI	S
-GTMSS	GTM	GTMSS	S
-HEAB	HE	HEAB	F
-HEKK	HE	HEKK	S
-HEPH	HE	HEPH	F
-HER9	HE	HER9	S
-HEW2	HE	HEW2	B
-JC126	JC	JC126	S
-JC139	JC	JC139	S
-JCBA	JC	JCBA	F
-JCLS	JC	JCLS	B
-JCNE	JC	JCNE	B
-MAAB	MA	MAAB	S
-MACE	MA	MACE	S
-MACW	MA	MACW	S
-MAMB	MA	MAMB	S
-PBBP	PB	PBBP	S
-PBBY	PB	PBBY	S
-PBGS	PB	PBGS	S
-PBJT	PB	PBJT	B
-SFCC	SF	SFCC	S
-SFEP	SF	SFEP	S
-SFFM	SF	SFFM	B
-SFGC	SF	SFGC	B
-SFSM	SF	SFSM	B
-SSBH	SS	SSBH	S
-SSCH	SS	SSCH	S
-SSSE	SS	SSSE	F
-SSVA	SS	SSVA	B
-SSWI	SS	SSWI	F
-WEHT	WE	WEHT	B
-WEIN	WE	WEIN	B
-WELM	WE	WELM	S
-WESM	WE	WESM	B
+#SampleID	NERR	Region	Ocean	North_South	salinity
+AB141	AB	SE	Gulf	South	S
+AB151	AB	SE	Gulf	South	S
+AB161	AB	SE	Gulf	South	S
+AB181	AB	SE	Gulf	South	B
+AB221	AB	SE	Gulf	South	S
+GBGB	GB	NE	Atlantic	North	S
+GBLR	GB	NE	Atlantic	North	B
+GBOR	GB	NE	Atlantic	North	B
+GBSQ	GB	NE	Atlantic	North	B
+GTMFM	GTM	SE	Atlantic	South	S
+GTMPC	GTM	SE	Atlantic	South	B
+GTMPI	GTM	SE	Atlantic	South	S
+GTMSS	GTM	SE	Atlantic	South	S
+HEAB	HE	Pacific-Island	Pacific	South	F
+HEKK	HE	Pacific-Island	Pacific	South	S
+HEPH	HE	Pacific-Island	Pacific	South	F
+HER9	HE	Pacific-Island	Pacific	South	S
+HEW2	HE	Pacific-Island	Pacific	South	B
+JC126	JC	NE	Atlantic	North	S
+JC139	JC	NE	Atlantic	North	S
+JCBA	JC	NE	Atlantic	North	F
+JCLS	JC	NE	Atlantic	North	B
+JCNE	JC	NE	Atlantic	North	B
+MAAB	MA	SE	Gulf	South	S
+MACE	MA	SE	Gulf	South	S
+MACW	MA	SE	Gulf	South	S
+MAMB	MA	SE	Gulf	South	S
+PBBP	PB	N-Pacific	Pacific	North	S
+PBBY	PB	N-Pacific	Pacific	North	S
+PBGS	PB	N-Pacific	Pacific	North	S
+PBJT	PB	N-Pacific	Pacific	North	B
+SFCC	SF	N-Pacific	Pacific	North	S
+SFEP	SF	N-Pacific	Pacific	North	S
+SFFM	SF	N-Pacific	Pacific	North	B
+SFGC	SF	N-Pacific	Pacific	North	B
+SFSM	SF	N-Pacific	Pacific	North	B
+SSBH	SS	N-Pacific	Pacific	North	S
+SSCH	SS	N-Pacific	Pacific	North	S
+SSSE	SS	N-Pacific	Pacific	North	F
+SSVA	SS	N-Pacific	Pacific	North	B
+SSWI	SS	N-Pacific	Pacific	North	F
+WEHT	WE	NE	Atlantic	North	B
+WEIN	WE	NE	Atlantic	North	B
+WELM	WE	NE	Atlantic	North	S
+WESM	WE	NE	Atlantic	North	B

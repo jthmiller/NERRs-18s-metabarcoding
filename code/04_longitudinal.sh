@@ -332,6 +332,15 @@ results/core-metrics-results/phylogenetic/gemelli-ctf-asv/
 
 
 
+qiime sample-classifier regress-samples \
+  --i-table ecam-table.qza \
+  --m-metadata-file ecam-metadata.tsv \
+  --m-metadata-column month \
+  --p-estimator RandomForestRegressor \
+  --p-n-estimators 20 \
+  --p-random-state 123 \
+  --output-dir ecam-regressor
+
 
 
 
@@ -432,4 +441,7 @@ qiime diversity core-metrics \
     --p-sampling-depth 1000 \
     --m-metadata-file metadata/metadata.tsv \
     --output-dir core-diversity/
+
+
+
 

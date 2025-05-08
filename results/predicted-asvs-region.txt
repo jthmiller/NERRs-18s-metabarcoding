@@ -1,0 +1,36 @@
+]633;E;read asv;a33f691f-9799-4464-8e3a-b06dde70acf4]633;C1a0eaaa3f9c732e9f59a298f42352045	d__Eukaryota; p__Phragmoplastophyta; c__Embryophyta; o__Magnoliophyta; f__Magnoliophyta; g__Magnoliophyta; s__Gossypium_barbadense	0.727
+2735eab569ddb6b1088f26df6d675a0c	d__Eukaryota; p__Phragmoplastophyta; c__Embryophyta; o__Magnoliophyta; f__Magnoliophyta; g__Magnoliophyta	1.0
+06128be798588a08b649536ac582201c	d__Eukaryota; p__Cryptophyceae; c__Cryptophyceae; o__Cryptomonadales; f__Cryptomonadales; g__Proteomonas	0.667
+2e106d23200f331f9db54b8ac6ec16f9	d__Eukaryota; p__Annelida; c__Polychaeta	0.6
+cbec27a5ab89ddb86d3d9c5d76631f9c	d__Eukaryota; p__Porifera; c__Demospongiae; o__Dictyoceratida; f__Dictyoceratida; g__Dictyoceratida	1.0
+056580345cff142d02132ebd9d3b7046	d__Eukaryota; p__Blastocladiomycota; c__Blastocladiomycetes; o__Blastocladiales; f__Blastocladiaceae; g__Allomyces; s__Allomyces_macrogynus	0.8
+8a14af643e7ba3db5c6f13a376f07782	d__Eukaryota; p__Mollusca; c__Bivalvia; o__Veneroida; f__Veneroida; g__Veneroida	1.0
+77fc78b12e81eec8298ca3dc7d8d2710	d__Eukaryota; p__Arthropoda; c__Maxillopoda; o__Calanoida; f__Calanoida; g__Calanoida; s__Acartia_tonsa	1.0
+c9695915623dd874fc576cd28032c174	d__Eukaryota; p__Chlorophyta; c__Mamiellophyceae; o__Mamiellales; f__Mamiellales; g__Micromonas	0.6
+65a9ad48aa6966f5d70cce81fd80e896	d__Eukaryota; p__Protalveolata; c__Syndiniales; o__Syndiniales; f__Syndiniales_Group_III; g__Syndiniales_Group_III; s__uncultured_eukaryote	1.0
+216c8dcb7f6bc2aa406db401d078cc21	d__Eukaryota; p__Cryptophyceae; c__Cryptophyceae; o__Cryptomonadales; f__Cryptomonadales; g__Teleaulax; s__uncultured_eukaryote	1.0
+509e8125754c35fa143c374768fe57fd	d__Eukaryota; p__Chlorophyta; c__Clade_VII; o__Subclade_A; f__Subclade_A; g__Subclade_A	0.8
+ea72fa2ffec6bb81d04f752d2953738d	d__Eukaryota; p__Arthropoda; c__Maxillopoda	0.9
+fb924282d29b8c99830862e936b37a56	d__Eukaryota; p__Vertebrata; c__Actinopterygii; o__Teleostei; f__Teleostei; g__Teleostei	0.9
+07bbd854eb807457453160d3219bacc4	d__Eukaryota; p__Mollusca; c__Gastropoda; o__Heterobranchia; f__Heterobranchia; g__Heterobranchia	1.0
+2d43e6e87daa2127405cf3b0b4420f62	d__Eukaryota; p__Cryptophyceae; c__Cryptophyceae; o__Cryptomonadales; f__Cryptomonadales; g__Rhodomonas	0.6
+c6958412232ff8f593831114466e4f38	d__Eukaryota; p__Chlorophyta; c__Mamiellophyceae; o__Mamiellales; f__Mamiellales	0.6
+506bbfde3be6cb8407450f36f8af9426	d__Eukaryota; p__Arthropoda; c__Maxillopoda	1.0
+8781ee88bf3e5a173f132cc3ba4c8e88	d__Eukaryota; p__Centrohelida; c__Centrohelida; o__Centrohelida; f__Centrohelida; g__Centrohelida; s__uncultured_eukaryote	1.0
+fe154721e04f01cef95c7c6db506d839	d__Eukaryota; p__Protalveolata; c__Syndiniales; o__Syndiniales; f__Syndiniales; g__Amoebophrya	1.0
+23d40d8827a57d073a6aa0ee5998f2c5	d__Eukaryota; p__Cryptophyceae; c__Cryptophyceae; o__Cryptomonadales; f__Cryptomonadales; g__Teleaulax	0.8
+b5f788d6c4631ae5d76f855f3661a0f0	d__Eukaryota; p__Arthropoda; c__Maxillopoda; o__Calanoida; f__Calanoida; g__Calanoida; s__Acartia_tonsa	1.0
+2aebde3370dcc21db3bcda69f29029ea	d__Eukaryota; p__Arthropoda; c__Maxillopoda; o__Calanoida; f__Calanoida; g__Calanoida; s__Acartia_tonsa	1.0
+947061b2c8fc2e9c80fc4262a071b632	d__Eukaryota; p__Tunicata; c__Appendicularia; o__Copelata; f__Oikopleuridae; g__Oikopleuridae; s__uncultured_eukaryote	0.8
+f863f671a575c6ab587e8de0190d3335	d__Eukaryota; p__Arthropoda; c__Maxillopoda; o__Calanoida; f__Calanoida; g__Calanoida; s__uncultured_eukaryote	0.9
+7115fa5104f9c205c916a4dbe6c007cb	d__Eukaryota; p__Ochrophyta; c__Chrysophyceae; o__uncultured; f__uncultured; g__uncultured	1.0
+d66185fc30e6e2ffb154e450fd55ed19	d__Eukaryota; p__Arthropoda; c__Maxillopoda; o__Calanoida; f__Calanoida; g__Calanoida	0.9
+5ae9cdcab63121f50ed88fca92fdbbe7	d__Eukaryota; p__Cryptophyceae; c__Cryptophyceae; o__Cryptomonadales; f__Cryptomonadales	1.0
+f89fbd120e2c8d6e451a761b00e90c4c	d__Eukaryota; p__Cryptophyceae; c__Cryptophyceae; o__Cryptomonadales; f__Cryptomonadales; g__Rhodomonas	1.0
+4d157d356e0a88c6209687e006dee346	d__Eukaryota; p__Cryptophyceae; c__Cryptophyceae; o__Cryptomonadales; f__Cryptomonadales; g__Rhodomonas; s__Rhinomonas_pauca	1.0
+058807a15af56ee9cb0a6c77e167f7b8	d__Eukaryota; p__Cercozoa; c__Thecofilosea	1.0
+133739e7f637b23baece14ccf7b3d317	d__Eukaryota; p__Cercozoa; c__Thecofilosea; o__Cryomonadida; f__Protaspidae; g__Protaspis	0.7
+1697b80eb9fa712da899eac0c2ba5508	d__Eukaryota; p__Chlorophyta; c__Trebouxiophyceae; o__Trebouxiophyceae; f__Trebouxiophyceae; g__Trebouxiophyceae; s__uncultured_marine	1.0
+f70f5a4d75831ba4bb4ecbf1de400780	d__Eukaryota; p__Ochrophyta; c__Ochrophyta; o__Ochrophyta; f__Ochrophyta; g__Bolidomonas; s__uncultured_eukaryote	0.75
+8c642ea0608fdbffa09cfb370ff87ce6	d__Eukaryota; p__Arthropoda; c__Maxillopoda	0.6
+408f678646c6baac8e2544c378ccaa55	d__Eukaryota; p__Arthropoda; c__Maxillopoda; o__Calanoida; f__Calanoida; g__Calanoida	1.0
